@@ -11,30 +11,31 @@
     --branco: #FFFFFF;
     --vermelho: #8E2424;
     --azul: #101828;
+    --fundo-span: #E5E5E5;
 }
 
 body {
     background-color: var(--branco);
     font-family: var(--fonte-navbar);
-    line-height: 24px;
-    min-width: 100vw;
+    line-height: 1.5rem;
+    max-width: 100vw;
 }
 
 .navbar_container {
-    height: 80px;
+    height: 5rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
 
 .navbar_img {
-    width: 148px;
+    width: 9.25rem;
 }
 
 .nav_container {
     display: flex;
     justify-content: space-between;
-    gap: 32px;
+    gap: 2rem;
 }
 
 .navbar_container a {
@@ -49,10 +50,10 @@ body {
     border: none;
     font-family: var(--fonte-navbar);
     font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     color: var(--cinza);
-    padding: 10px 16px;
+    padding: .625rem 1rem;
     cursor: pointer;
 }
 
@@ -61,11 +62,11 @@ body {
     background-color: var(--vermelho);
     font-family: var(--fonte-navbar);
     font-weight: 500;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 1rem;
+    line-height: 1.5rem;
     color: var(--branco);
-    border-radius: 8px;
-    padding: 10px 18px;
+    border-radius: .5rem;
+    padding: .625rem 1.125rem;
     cursor: pointer;
 }
 
@@ -74,63 +75,94 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 24px;
-    padding: 96px 0;
+    gap: 1.5rem;
+    padding: 6rem 0;
 }
 
-.span_about {
+span {
     color: var(--vermelho);
     font-weight: 600;
 }
 
 .titulo_about {
-    font-size: 48px;
-    line-height: 60px;
+    font-size: 3rem;
+    line-height: 3.75rem;
     font-weight: 600;
     color: var(--azul);
 }
 
-.texto_about {
-    width: 792px;
-    font-size: 20px;
+.texto {
+    width: 49.5rem;
+    font-size: 1.25rem;
     text-align: center;
     color: var(--cinza);
-    padding: 12px 0 0 0;
+    padding: .75rem 0 0 0;
 }
 
 .sec_metricas{
-    padding: 0 80px 96px 80px;
+    padding: 0 5rem 6rem 5rem;
 }
 
 .container_metricas{
     display: flex;
     justify-content: space-between;
-    gap: 32px;
-    padding: 0 32px;
+    gap: 2rem;
+    padding: 0 2rem;
 
 }
 
 .metrica{
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    width: 280px;
+    gap: .75rem;
+    width: 25rem;
 }
 
 .titulo_metrica{
-    font-size: 60px;
+    font-size: 3.75rem;
     font-weight: 600;
-    line-height: 72px;
+    line-height: 4.5rem;
     letter-spacing: -2%;
     color: var(--vermelho);
 }
 .subtitulo_metrica{
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 500;
-    line-height: 28px;
+    line-height: 1.75rem;
     color: var(--azul);
 }
 
 .texto_metrica{
     color: var(--cinza);
+}
+
+.sec_vagas{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    padding: 6rem 0;
+}
+
+.span_background{
+    background-color: var(--fundo-span);
+    border-radius: 1rem;
+    padding: .25rem .75rem;
+}
+
+.titulo_vagas{
+    line-height: 2.75rem;
+    letter-spacing: -2%;
+    font-size: 2.25rem;
+    font-weight: 600;
+    color: var(--azul);
+}  
+
+.sec_vagas .texto{
+    padding: .25rem 0 0 0;
+}
+
+.img_vagas{
+    padding-top: 3rem;
 }
