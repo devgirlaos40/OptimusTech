@@ -12,6 +12,7 @@
     --vermelho: #8E2424;
     --azul: #101828;
     --fundo-span: #E5E5E5;
+    --borda-vaga: #EAECF0;
 }
 
 body {
@@ -142,7 +143,7 @@ span {
     justify-content: space-between;
     align-items: center;
     gap: 1rem;
-    padding: 6rem 0;
+    padding: 6rem 0 4rem;
 }
 
 .span_background{
@@ -166,4 +167,47 @@ span {
 .img_vagas{
     padding-top: 3rem;
     max-width: 80vw;
+}
+
+.sec_oferta_vagas{
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    padding: 0 16rem;
+}
+
+.area_vagas{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 48rem;
+    margin: 0 auto;
+}
+
+.titulo_cargo{
+    font-size: 1.25rem;
+    font-weight: 500;
+    line-height: 1.875rem;
+}
+
+.cargo_vaga{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+    border: 1px solid var(--borda-vaga);
+    border-radius: 1rem;
+}
+
+.titulo_vaga{
+    font-size: 1.125rem;
+    font-weight: 500;
+    line-height: 1.75rem;
+}
+
+.dados_vaga{
+    display: flex;
+    gap: 2rem;
+    color: var(--cinza);
+    line-height: 1.5rem;
 }
