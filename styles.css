@@ -13,6 +13,8 @@
     --azul: #101828;
     --fundo-span: #E5E5E5;
     --borda-vaga: #EAECF0;
+    --fundo-avaliacoes: rgba(195, 25, 25, 0.03);
+    --fundo-newsletter: #F9FAFB;
 }
 
 body {
@@ -173,7 +175,7 @@ span {
     display: flex;
     flex-direction: column;
     gap: 4rem;
-    padding: 0 16rem;
+    padding: 0 16rem 6rem;
 }
 
 .area_vagas{
@@ -210,4 +212,119 @@ span {
     gap: 2rem;
     color: var(--cinza);
     line-height: 1.5rem;
+}
+
+.sec_avaliacoes{
+    margin: 0 5rem 6rem 6rem;
+}
+
+.container_avaliacoes{
+    background-color: var(--fundo-avaliacoes);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    padding: 4rem;
+    margin: 2rem;
+}
+
+.avaliacao_texto{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+}
+.avaliacao_texto span{
+    font-size: .85rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+}
+
+.avaliacao_texto p{
+    font-size: 2.25rem;
+    font-weight: 500;
+    line-height: 2.75rem;
+    letter-spacing: -2%;
+    text-align: center;
+
+}
+
+.avaliacao_colaborador{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+}
+
+.foto_colaborador{
+    width: 6rem;
+}
+
+.avaliacao_colaborador h5{
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+
+.avaliacao_colaborador p{
+    font-size: .85rem;
+    color: var(--cinza);
+    
+}
+
+.sec_newsletter{
+    background-color: var(--fundo-newsletter);
+    padding: 6rem 19rem 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.25rem;
+}
+
+.sec_newsletter h2{
+    font-size: 2.25rem;
+    font-weight: 600;
+    line-height: 2.75rem;
+    letter-spacing: -2%;
+    text-align: center;
+    columns: var(--azul);
+}
+
+.newsletter_texto{
+    font-size: 1.25rem;
+    color: var(--cinza);
+}
+
+.newsletter_input{
+    width: 22.5rem;
+    padding: .75rem 1rem;
+    border: 1.5px solid #D0D5DD;
+    border-radius: .5rem;
+margin-right: 1rem;
+}
+
+.newsletter_input::placeholder{
+    line-height: 1.5rem;
+    font-size: 1rem;
+    color: #667085;
+}
+
+.newsletter_form button{
+    border: none;
+    background-color: var(--vermelho);
+    font-family: var(--fonte-navbar);
+    font-weight: 500;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--branco);
+    border-radius: .5rem;
+    padding: .625rem 1.125rem;
+    cursor: pointer;
+}
+
+footer{
+    background-color: var(--fundo-newsletter);
+    text-align: center;
+    color: var(--cinza);
+    padding-bottom: 4rem;
+    font-size: 12px;
 }
